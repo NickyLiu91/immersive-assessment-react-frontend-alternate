@@ -1,13 +1,13 @@
 import React from "react";
 
-const Transaction = ({ transaction }) => {
+const Transaction = () => {
   console.log(transaction);
   return (
     <tr>
-      <td>{transaction.posted_at}</td>
-      <td>{transaction.description}</td>
-      <td>{transaction.category}</td>
-      <td>{transaction.amount}</td>
+      <td>{/* your code here */}</td>
+      <td>{/* your code here */}</td>
+      <td>{/* your code here */}</td>
+      <td>{/* your code here */}</td>
     </tr>
   );
 };

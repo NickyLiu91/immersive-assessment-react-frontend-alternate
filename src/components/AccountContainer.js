@@ -23,7 +23,7 @@ class AccountContainer extends Component {
     return (
       <div>
         <Search />
-        <TransactionsList transactions={this.state.transactions} />
+        <TransactionsList />
       </div>
     );
   }
