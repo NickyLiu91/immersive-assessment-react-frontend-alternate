@@ -6,7 +6,14 @@ const apiBaseAddress = "http://localhost:4000/transactions";
 
 class AccountContainer extends Component {
   state = {
-    transactions: []
+    transactions: [],
+    searchTerm: "",
+    sortBy: null,
+    sortDirection: "asc",
+    sortCriteria: {
+      asc: [1, -1],
+      desc: [-1, 1]
+    }
   };
 
   componentDidMount() {
@@ -15,15 +22,62 @@ class AccountContainer extends Component {
       .then(transactions => this.setState({ transactions }));
   }
 
-  handleChange(event) {
-    // your code here
-  }
+  handleSearchTerm = event => {
+    this.setState({
+      searchTerm: event.target.value
+    });
+  };
+
+  applySearchTerm = () => {
+    return this.state.transactions.filter(t => {
+      return (
+        t.description
+          .toLowerCase()
+          .includes(this.state.searchTerm.toLowerCase()) ||
+        t.category.toLowerCase().includes(this.state.searchTerm.toLowerCase())
+      );
+    });
+  };
+
+  transactionsToDisplay = event => {
+    const transactionsToDisplay = this.applySearchTerm();
+
+    if (this.state.sortBy) {
+      const softFn = (a, b) => {
+        return a[this.state.sortBy] > b[this.state.sortBy]
+          ? this.state.sortCriteria[this.state.sortDirection][0]
+          : b[this.state.sortBy] > a[this.state.sortBy]
+            ? this.state.sortCriteria[this.state.sortDirection][1]
+            : 0;
+      };
+      return transactionsToDisplay.sort(softFn);
+    } else {
+      return transactionsToDisplay;
+    }
+  };
+
+  handleSort = propertyName => {
+    if (this.state.sortBy === propertyName) {
+      const sortDirection = this.state.sortDirection === "asc" ? "desc" : "asc";
+      this.setState({
+        sortDirection
+      });
+    } else {
+      this.setState({ sortBy: propertyName, sortDirection: "asc" });
+    }
+  };
 
   render() {
     return (
       <div>
-        <Search />
-        <TransactionsList transactions={this.state.transactions} />
+        <Search
+          handleSearchTerm={this.handleSearchTerm}
+          searchTerm={this.state.searchTerm}
+        />
+        <TransactionsList
+          handleSort={this.handleSort}
+          transactions={this.transactionsToDisplay()}
+        />
       </div>
     );
   }
