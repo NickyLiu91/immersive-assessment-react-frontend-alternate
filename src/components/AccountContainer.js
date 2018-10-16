@@ -1,17 +1,18 @@
-import React, { Component } from 'react'
-import TransactionsList from './TransactionsList'
-import Search from './Search'
-import {transactions} from '../transactionsData'
+import React, { Component } from "react";
+import TransactionsList from "./TransactionsList";
+import Search from "./Search";
+
+const apiBaseAddress = "http://localhost:4000/transactions";
 
 class AccountContainer extends Component {
+  state = {
+    transactions: []
+  };
 
-  constructor() {
-    super()
-
-    // get a default state working with the data imported from TransactionsData
-    // use this to get the functionality working
-    // then replace the default transactions with a call to the API
-
+  componentDidMount() {
+    fetch(apiBaseAddress)
+      .then(r => r.json())
+      .then(transactions => this.setState({ transactions }));
   }
 
   handleChange(event) {
@@ -19,14 +20,13 @@ class AccountContainer extends Component {
   }
 
   render() {
-
     return (
       <div>
         <Search />
-        <TransactionsList />
+        <TransactionsList transactions={this.state.transactions} />
       </div>
-    )
+    );
   }
 }
 
-export default AccountContainer
+export default AccountContainer;

@@ -1,0 +1,175 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "posted_at": "2017-05-23T18:07:20.470Z",
+      "description": "StubHub Concert Tickets: Beyonce @ Barclay's Center",
+      "category": "Entertainment",
+      "amount": -58900,
+      "created_at": "2017-05-24T18:07:20.488Z",
+      "updated_at": "2017-05-24T18:07:20.488Z"
+    },
+    {
+      "id": 2,
+      "posted_at": "2017-05-23T18:07:20.493Z",
+      "description": "Paycheck from Bob's Burgers",
+      "category": "Income",
+      "amount": 100000,
+      "created_at": "2017-05-24T18:07:20.494Z",
+      "updated_at": "2017-05-24T18:07:20.494Z"
+    },
+    {
+      "id": 3,
+      "posted_at": "2017-05-23T18:07:20.497Z",
+      "description": "South by Southwest Quinoa Bowl at Fresh \u0026 Co",
+      "category": "Food",
+      "amount": -1050,
+      "created_at": "2017-05-24T18:07:20.498Z",
+      "updated_at": "2017-05-24T18:07:20.498Z"
+    },
+    {
+      "id": 4,
+      "posted_at": "2017-05-22T18:07:20.501Z",
+      "description": "South by Southwest Quinoa Bowl at Fresh \u0026 Co",
+      "category": "Food",
+      "amount": -1050,
+      "created_at": "2017-05-24T18:07:20.503Z",
+      "updated_at": "2017-05-24T18:07:20.503Z"
+    },
+    {
+      "id": 5,
+      "posted_at": "2017-05-22T18:07:20.506Z",
+      "description": "Netflix Monthly Subscription",
+      "category": "Entertainment",
+      "amount": -899,
+      "created_at": "2017-05-24T18:07:20.507Z",
+      "updated_at": "2017-05-24T18:07:20.507Z"
+    },
+    {
+      "id": 6,
+      "posted_at": "2017-05-20T18:07:20.511Z",
+      "description": "Dope Jean Jacket, Gap co.",
+      "category": "Fashion",
+      "amount": -6900,
+      "created_at": "2017-05-24T18:07:20.512Z",
+      "updated_at": "2017-05-24T18:07:20.512Z"
+    },
+    {
+      "id": 7,
+      "posted_at": "2017-05-20T18:07:20.522Z",
+      "description": "Sunglasses, Urban Outfitters",
+      "category": "Fashion",
+      "amount": -2499,
+      "created_at": "2017-05-24T18:07:20.523Z",
+      "updated_at": "2017-05-24T18:07:20.523Z"
+    },
+    {
+      "id": 8,
+      "posted_at": "2017-05-19T18:07:20.526Z",
+      "description": "Venmo, Alice Pays you for Burrito",
+      "category": "Food",
+      "amount": 875,
+      "created_at": "2017-05-24T18:07:20.527Z",
+      "updated_at": "2017-05-24T18:07:20.527Z"
+    },
+    {
+      "id": 9,
+      "posted_at": "2017-05-19T18:07:20.530Z",
+      "description": "Chipotle",
+      "category": "Food",
+      "amount": -1750,
+      "created_at": "2017-05-24T18:07:20.531Z",
+      "updated_at": "2017-05-24T18:07:20.531Z"
+    },
+    {
+      "id": 10,
+      "posted_at": "2017-05-17T18:07:20.535Z",
+      "description": "Birthday Check from Grandma",
+      "category": "Gift",
+      "amount": 5000,
+      "created_at": "2017-05-24T18:07:20.535Z",
+      "updated_at": "2017-05-24T18:07:20.535Z"
+    },
+    {
+      "id": 11,
+      "posted_at": "2017-05-17T18:07:20.538Z",
+      "description": "ATM Withdrawal",
+      "category": "ATM",
+      "amount": -6000,
+      "created_at": "2017-05-24T18:07:20.540Z",
+      "updated_at": "2017-05-24T18:07:20.540Z"
+    },
+    {
+      "id": 12,
+      "posted_at": "2017-05-17T18:07:20.544Z",
+      "description": "ATM Withdrawal Fee",
+      "category": "ATM",
+      "amount": -275,
+      "created_at": "2017-05-24T18:07:20.545Z",
+      "updated_at": "2017-05-24T18:07:20.545Z"
+    },
+    {
+      "id": 13,
+      "posted_at": "2017-05-17T18:07:20.549Z",
+      "description": "Lyft Ride",
+      "category": "Transportation",
+      "amount": -1325,
+      "created_at": "2017-05-24T18:07:20.550Z",
+      "updated_at": "2017-05-24T18:07:20.550Z"
+    },
+    {
+      "id": 14,
+      "posted_at": "2017-05-16T18:07:20.554Z",
+      "description": "Paycheck from Bob's Burgers",
+      "category": "Income",
+      "amount": 100000,
+      "created_at": "2017-05-24T18:07:20.556Z",
+      "updated_at": "2017-05-24T18:07:20.556Z"
+    },
+    {
+      "id": 15,
+      "posted_at": "2017-05-16T18:07:20.564Z",
+      "description": "Tickets, Flatiron Multiplex Cinemas",
+      "category": "Entertainment",
+      "amount": -2400,
+      "created_at": "2017-05-24T18:07:20.565Z",
+      "updated_at": "2017-05-24T18:07:20.565Z"
+    },
+    {
+      "id": 16,
+      "posted_at": "2017-05-16T18:07:20.568Z",
+      "description": "Popcorn, soda, Flatiron Multiplex Cinemas",
+      "category": "Food",
+      "amount": -900,
+      "created_at": "2017-05-24T18:07:20.569Z",
+      "updated_at": "2017-05-24T18:07:20.569Z"
+    },
+    {
+      "id": 17,
+      "posted_at": "2017-05-14T18:07:20.573Z",
+      "description": "MTA Vending Machine: MetroCard",
+      "category": "Transportation",
+      "amount": -11650,
+      "created_at": "2017-05-24T18:07:20.574Z",
+      "updated_at": "2017-05-24T18:07:20.574Z"
+    },
+    {
+      "id": 18,
+      "posted_at": "2017-05-14T18:07:20.577Z",
+      "description": "Venmo, Pay Roomate for Rent",
+      "category": "Housing",
+      "amount": -97500,
+      "created_at": "2017-05-24T18:07:20.578Z",
+      "updated_at": "2017-05-24T18:07:20.578Z"
+    },
+    {
+      "id": 19,
+      "posted_at": "2017-05-14T18:07:20.581Z",
+      "description": "Student Loan Automated Payment",
+      "category": "Misery",
+      "amount": -25000,
+      "created_at": "2017-05-24T18:07:20.582Z",
+      "updated_at": "2017-05-24T18:07:20.582Z"
+    }
+  ]
+}
