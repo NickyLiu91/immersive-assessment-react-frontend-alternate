@@ -16,8 +16,6 @@ When you clone down this project, the component `<AccountContainer />` will be i
 - As a user, you should be able to enter text into an input field and dynamically filter the list of transactions by either description or category as you type.
 - As a user, you should be able to click on the Title of a column and sort by either posted at, description, category or amount
 
-![example project](https://s3-us-west-2.amazonaws.com/curriculum-content/immersive_assessments/react-challenge.gif)
-
 ![Jest watch mode](./public/react-challenge.gif)
 
 Use the above gif as an example of how the app should function.
