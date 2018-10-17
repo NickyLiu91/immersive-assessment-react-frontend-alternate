@@ -18,6 +18,8 @@ When you clone down this project, the component `<AccountContainer />` will be i
 
 ![example project](https://s3-us-west-2.amazonaws.com/curriculum-content/immersive_assessments/react-challenge.gif)
 
+![Jest watch mode](./public/react-challenge.gif)
+
 Use the above gif as an example of how the app should function.
 
 
